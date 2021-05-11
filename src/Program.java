@@ -2,6 +2,7 @@
 import java.util.TreeSet;
 
 public class Program {
+
     public static final class House implements Comparable<House>{
         final int area;
         final int price;
@@ -53,6 +54,10 @@ public class Program {
         for (House h : myHouseArrayList) {
             System.out.println(h);
         }
+        System.out.println("Hash код першого дому:"+firstHouse.hashCode());
+        System.out.println("Hash код другого дому:"+firstHouse.hashCode());
+        System.out.println(firstHouse.compareTo(secondHouse));
+        System.out.println(firstHouse.equals(secondHouse));
 
     }
 }
